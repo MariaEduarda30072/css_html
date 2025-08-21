@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhode Beauty | Hailey Bieber - Skincare & Makeup</title>
+    <meta name="description" content="Descubra a linha completa de produtos Rhode Beauty da Hailey Bieber. Skincare e maquiagem premium para uma pele radiante e natural.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8f6f4;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #e8e5e2;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #d4a574, #c49a7a);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #c49a7a, #b8896b);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(248, 246, 244, 0.95);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #d4a574, #e8b4a0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .logo-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0;
+        }
+
+        .logo-text p {
+            font-size: 0.875rem;
+            color: #4a4a4a;
+            margin: 0;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #d4a574;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #1a1a1a;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, #f8f6f4 0%, #ede8e3 50%, #e8e0d7 100%);
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: -10%;
+            width: 50%;
+            height: 120%;
+            background: url('https://static.lumi.new/06/067049c35acfba7f23352badbec34344.webp') center/cover;
+            border-radius: 50px;
+            opacity: 0.8;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            text-align: left;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #d4a574, #c49a7a, #8a6b5c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #4a4a4a;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .hero-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: #2a2a2a;
+            margin-bottom: 2rem;
+            max-width: 400px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #d4a574, #e8b4a0);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(212, 165, 116, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #d4a574;
+            padding: 1rem 2rem;
+            border: 2px solid #d4a574;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: #d4a574;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .product-showcase {
+            width: 350px;
+            height: 450px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(212, 165, 116, 0.3);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .product-showcase:hover {
+            transform: scale(1.05);
+        }
+
+        .product-showcase img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Brand Story Section */
+        .brand-story {
+            padding: 5rem 0;
+            background: linear-gradient(180deg, #f8f6f4 0%, rgba(232, 224, 215, 0.3) 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #d4a574, #c49a7a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 3rem;
+        }
+
+        .section-description {
+            text-align: center;
+            font-size: 1.25rem;
+            color: #2a2a2a;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(232, 180, 160, 0.3), rgba(212, 165, 116, 0.3));
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+
+        .stat-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(45deg, #d4a574, #e8b4a0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 32px;
+            color: white;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #4a4a4a;
+            font-weight: 500;
+        }
+
+        .brand-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .details-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .details-text p {
+            color: #2a2a2a;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .details-image {
+            position: relative;
+        }
+
+        .details-image img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px rgba(212, 165, 116, 0.3);
+        }
+
+        /* Products Section */
+        .products {
+            padding: 5rem 0;
+            background: #f8f6f4;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            border-radius: 24px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(212, 165, 116, 0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(212, 165, 116, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .product-card p {
+            color: #2a2a2a;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #d4a574;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-btn {
+            background: linear-gradient(45deg, #d4a574, #e8b4a0);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .product-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #e8e0d7, #d4c4b0);
+            text-align: center;
+        }
+
+        .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .newsletter p {
+            font-size: 1.25rem;
+            color: #2a2a2a;
+            margin-bottom: 2rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid rgba(212, 165, 116, 0.3);
+            border-radius: 50px;
+            font-size: 1rem;
+            background: white;
+            color: #1a1a1a;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: #d4a574;
+        }
+
+        .newsletter-form button {
+            background: linear-gradient(45deg, #d4a574, #e8b4a0);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            padding: 3rem 0 1rem;
+            border-top: 1px solid rgba(212, 165, 116, 0.2);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #c4b5a0;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: #d4a574;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #d4a574, #e8b4a0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(212, 165, 116, 0.2);
+            padding-top: 1rem;
+            text-align: center;
+            color: #c4b5a0;
+        }
+
+        /* Animações */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(212, 165, 116, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(212, 165, 116, 0.6);
+            }
+        }
+
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero::before {
+                left: -20%;
+                width: 80%;
+                opacity: 0.4;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .hero-brand {
+                font-size: 2rem;
+            }
+
+            .product-showcase {
+                width: 280px;
+                height: 350px;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .brand-details {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">R</div>
+                    <div class="logo-text">
+                        <h1>Rhode</h1>
+                        <p>Beauty by Hailey</p>
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <a href="#home">Início</a>
+                    <a href="#story">Nossa História</a>
+                    <a href="#products">Produtos</a>
+                    <a href="#newsletter">Newsletter</a>
+                </nav>
+
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title animate-float">Rhode</h1>
+                    <p class="hero-subtitle">Skincare & Beauty</p>
+                    <h2 class="hero-brand">by Hailey Bieber</h2>
+                    <p class="hero-description">
+                        Produtos de beleza premium que celebram a sua pele natural. 
+                        Fórmulas limpas, eficazes e luxuosas para o seu ritual de cuidados.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn-primary">
+                            ★ Ver Produtos
+                        </a>
+                        <a href="#story" class="btn-secondary">
+                            ♦ Nossa História
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="product-showcase animate-pulse-glow">
+                        <img src="https://static.lumi.new/f5/f58ecd882fbf36e0d852dddcefd23c5d.webp" alt="Rhode Beauty Products Collection">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section id="story" class="brand-story">
+        <div class="container">
+            <h2 class="section-title">Nossa História</h2>
+            <p class="section-description">
+                Rhode nasceu do amor pela simplicidade e eficácia. Criada por Hailey Bieber, 
+                nossa marca celebra a beleza natural com produtos que realmente funcionam, 
+                desenvolvidos para mulheres modernas que valorizam qualidade e autenticidade.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">♠</div>
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Ingredientes Naturais</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">♣</div>
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Químicos Agressivos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">♥</div>
+                    <div class="stat-value">Cruelty</div>
+                    <div class="stat-label">Free</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">♦</div>
+                    <div class="stat-value">Premium</div>
+                    <div class="stat-label">Quality</div>
+                </div>
+            </div>
+
+            <div class="brand-details">
+                <div class="details-text">
+                    <h3>Beleza Autêntica</h3>
+                    <p>
+                        Na Rhode, acreditamos que a verdadeira beleza vem de dentro. Nossos produtos 
+                        são formulados para realçar sua pele natural, não para escondê-la.
+                    </p>
+                    <p>
+                        Cada produto é cuidadosamente desenvolvido com ingredientes premium, 
+                        testados e aprovados por dermatologistas, garantindo segurança e eficácia.
+                    </p>
+                    <p>
+                        Nossa missão é empoderar mulheres a se sentirem confiantes em sua própria pele, 
+                        oferecendo soluções de beleza que se adaptam ao seu estilo de vida.
+                    </p>
+                </div>
+                <div class="details-image">
+                    <img src="https://static.lumi.new/ce/ce5c3068866796c0a09f1ae92f7586a7.webp" alt="Hailey Bieber with Rhode Products">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://static.lumi.new/0d/0d61fce4d3b1158347200d9b6a22aea7.webp" alt="Rhode Peptide Lip Treatment">
+                    </div>
+                    <h4>Peptide Lip Treatment</h4>
+                    <p>Tratamento labial intensivo com peptídeos que hidrata e restaura a maciez natural dos lábios.</p>
+                    <div class="product-price">R$ 89,90</div>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://static.lumi.new/a4/a4f303a81bc96412d6d5867fa68af0d8.webp" alt="Rhode Pocket Blush">
+                    </div>
+                    <h4>Pocket Blush</h4>
+                    <p>Blush cremoso em formato compacto para um toque natural de cor nas bochechas.</p>
+                    <div class="product-price">R$ 119,90</div>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://static.lumi.new/22/2228c42b6499e75a9edd2938bfa76232.webp" alt="Rhode Contour Sticks">
+                    </div>
+                    <h4>Contour Sticks</h4>
+                    <p>Bastões de contorno cremosos para definir e esculpir o rosto de forma natural.</p>
+                    <div class="product-price">R$ 149,90</div>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://static.lumi.new/06/067049c35acfba7f23352badbec34344.webp" alt="Rhode Complete Kit">
+                    </div>
+                    <h4>Complete Skincare Kit</h4>
+                    <p>Kit completo com todos os essenciais para uma rotina de cuidados com a pele.</p>
+                    <div class="product-price">R$ 299,90</div>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://static.lumi.new/3c/3c1df0055250fefedf4d6a3ad6e789d4.webp" alt="Rhode Travel Set">
+                    </div>
+                    <h4>Travel Beauty Set</h4>
+                    <p>Set de viagem com produtos essenciais em tamanho perfeito para levar onde for.</p>
+                    <div class="product-price">R$ 179,90</div>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://static.lumi.new/0d/0d61fce4d3b1158347200d9b6a22aea7.webp" alt="Rhode Lip Collection">
+                    </div>
+                    <h4>Lip Collection</h4>
+                    <p>Coleção completa de tratamentos labiais em diferentes tonalidades naturais.</p>
+                    <div class="product-price">R$ 199,90</div>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>♠ Fique por Dentro</h2>
+                <p>Receba as novidades, dicas de beleza e lançamentos exclusivos da Rhode diretamente no seu e-mail.</p>
+                
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever-se</button>
+                </div>
+
+                <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                    *Ao se inscrever, você concorda em receber e-mails promocionais da Rhode Beauty.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rhode Beauty</h3>
+                    <p>Skincare e maquiagem premium criados por Hailey Bieber para celebrar sua beleza natural.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">♠</a>
+                        <a href="#" class="social-link">♣</a>
+                        <a href="#" class="social-link">♥</a>
+                        <a href="#" class="social-link">♦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Produtos</h3>
+                    <a href="#products">Skincare</a>
+                    <a href="#products">Maquiagem</a>
+                    <a href="#products">Lançamentos</a>
+                    <a href="#products">Sets & Kits</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Trocas e Devoluções</a>
+                    <a href="#">Rastreamento</a>
+                    <a href="#">Contato</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <p>@ hello@rhode.com</p>
+                    <p>& www.rhode.com</p>
+                    <p>% @rhode</p>
+                    <p>* Los Angeles, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rhode Beauty by Hailey Bieber. Todos os direitos reservados. | Skincare & Beauty Official Website</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const nav = document.querySelector('.nav');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Product buttons
+        document.querySelectorAll('.product-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productName = this.closest('.product-card').querySelector('h4').textContent;
+                alert(`${productName} adicionado ao carrinho! ♠♣`);
+            });
+        });
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            if (email) {
+                alert('Obrigada por se inscrever! ♥ Você receberá nossas novidades em breve.');
+                this.querySelector('input').value = '';
+            }
+        });
+
+        // Animação de scroll reveal
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animação aos elementos
+        document.querySelectorAll('.stat-card, .product-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Parallax effect no hero
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroBackground = document.querySelector('.hero::before');
+            if (heroBackground) {
+                const rate = scrolled * -0.5;
+                heroBackground.style.transform = `translateY(${rate}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
