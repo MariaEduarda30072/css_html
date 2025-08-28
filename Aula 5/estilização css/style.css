@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+}
+.bloco1{
+    padding: 20px;
+    margin: 10px;
+    background-color: steelblue;
+    text-align: left;
+    border: 5px solid #0F52BA;
+    border-radius: 10px;
+}
+
+.bloco2{
+    padding: 20px;
+    margin: 10px;
+    background-color: lightskyblue;
+    text-align: left;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.bloco3{
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(17, 39, 57);
+    text-align: left;
+    border:5px solid #191970;
+    border-radius: 10px;
+    color: #87CEEB;
+}
+
+.bloco4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid #90d8ff;
+    color: rgb(95, 146, 255);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0c0c24;
+    text-align: left;
+}
