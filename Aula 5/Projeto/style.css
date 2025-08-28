@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(75, 155, 205);
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    background-color: rgb(150, 206, 255);
+    padding: 20px;
+    margin: 20px;
+    }
+    button{
+        background-color: rgb(5, 20, 58);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 5px;
+        border: none;
+    }
+    .formulario{
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin: 10px;
+    }
