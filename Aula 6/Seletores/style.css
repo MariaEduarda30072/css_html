@@ -1,0 +1,132 @@
+body{
+  background-color: #99ccff;
+}
+
+
+/* 1 - Parágrafos em azul */
+p {
+  color: rgb(0, 0, 0);
+}
+
+/* 2 - Título principal */
+#titulo-principal {
+  background:#4ca3fa(0, 13, 255);
+  border: 10px solid #003366;
+}
+
+/* 3 - Subtítulos */
+.subtitulo {
+  color: rgb(9, 86, 100);
+}
+
+/* 4 - Itens da lista */
+li {
+  color: rgb(79, 141, 248);
+}
+
+/* 5 - Duas divs com cores diferentes *
+#div1 {
+  background: lightgray;
+}
+#div2 {
+  background: lightblue;
+}
+
+/* 6 - Agrupamento */
+p, h2, h3 {
+  font-family: Arial, sans-serif;
+  color: #004C99;
+}
+
+/* 7 - Texto centralizado */
+#centralizado {
+  text-align: center;
+}
+
+/* 8 - Links diferentes */
+#google {
+  color: #1E90FF;
+}
+#youtube {
+  color: #4169E1;
+}
+
+/* 9 - Classe compartilhada */
+.negrito {
+  font-weight: bold;
+}
+
+/* 10 - Estilizando imagens */
+img {
+  border: 10px solid black;
+  width: 120px;
+  margin: 5px;
+}
+
+/* 11 - Descendente */
+div p {
+  color: #5F9EA0;
+}
+
+/* 12 - Dois parágrafos diferentes */
+.primeiro {
+  color: teal;
+}
+.segundo {
+  color: #99CCFF;
+}
+
+/* 13 - Mudando fonte */
+#fonte-h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* 14 - Negrito, itálico, sublinhado */
+.bold {
+  font-weight: bold;
+}
+.italico {
+  font-style: italic;
+}
+.sublinhado {
+  text-decoration: underline;
+}
+
+/* 15 - Cor apenas no h3 dentro da div */
+div h3 {
+  color: #87CEFA;
+}
+
+/* 16 - Três divs diferentes */
+#d1 {
+  background: #00264D;
+}
+#d2 {
+  background: #001A33;
+}
+#d3 {
+  background: #0F3057;
+}
+
+/* 17 - Span colorido */
+.destaque {
+  color: #708090;
+}
+
+/* 18 - Caixa colorida */
+#caixa {
+  background: #69a0eb;
+  border: 10px solid #081F4D;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* 19 - Links com classe */
+.sublink {
+  text-decoration: underline;
+}
+
+/* 20 - Agrupando tudo */
+h1, p, a {
+  color: navy;
+}
