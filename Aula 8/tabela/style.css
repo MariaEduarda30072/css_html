@@ -1,0 +1,94 @@
+table {
+  border: 2px solid black;    
+  border-collapse: collapse;   
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid black;     
+  padding: 8px;                
+  text-align: left;          
+}
+
+table {
+ border: solid black;
+  border: #d0f0ff;
+  margin-bottom: 30px;
+}
+th, td {
+  border: 1px solid #000;
+  padding: 5px 10px;
+}
+
+.tabela1 
+{ border: 2px solid black; }
+
+.tabela2 th
+{ background: lightgray; }
+
+.tabela3 
+{ color: blue; }
+
+.tabela4
+ { font-family: Arial, sans-serif; }
+
+.tabela5 th 
+{ font-size: 20px; }
+
+.tabela6 td
+ { background: #f0f0f0; }
+
+.tabela7 td, .tabela7 th 
+{ text-align: center; }
+
+.tabela8 th, .tabela8 td 
+{ border: 3px solid black; }
+
+.tabela9 th 
+{ color: red; }
+
+.tabela10 th, .tabela10 td 
+{ padding: 15px; }
+
+.tabela11 td:first-child
+ { font-style: italic; }
+
+.tabela12 td 
+{ font-weight: bold; }
+
+.tabela13 tr:first-child
+ { background: #e0e0e0; }
+
+
+.tabela14 td, 
+.tabela14 th
+ { color: green; }
+
+.tabela15 
+{ font-family: Verdana, sans-serif; font-size: 18px; }
+
+
+.tabela16 
+tr:nth-child(2) 
+{ background: #d0f0ff; }
+
+.tabela17 th 
+{ background: #333; color: white; }
+
+
+.tabela18 
+{ text-transform: uppercase; }
+
+
+.tabela19 th 
+{ font-family: Georgia, serif; }
+
+.tabela20 {
+  border: 2px solid black;
+  color: darkblue;
+  background: #f9f9c0;
+}
+.tabela20 th {
+  background: #444;
+  color: white;
+}
