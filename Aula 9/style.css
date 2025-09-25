@@ -1,0 +1,120 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #001243;
+    padding: 20px;
+    background: #f0f2f5;
+    text-align: center;
+}
+
+/* --- QUADRO DE HORÁRIOS --- */
+table.horarios {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table.horarios th, 
+table.horarios td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+table.horarios th {
+    background: #023e8a;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+table.horarios tr:nth-child(even) {
+    background: #f1f5fa;
+}
+
+table.horarios tr:hover {
+    background: #caf0f8;
+    transition: 0.3s;
+}
+
+/* Intervalo destacado */
+table.horarios td[colspan] {
+    background: #90e0ef !important;
+    font-weight: bold;
+}
+
+/* --- CAMPEONATO DE FUTEBOL --- */
+table.campeonato {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table.campeonato th, 
+table.campeonato td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+table.campeonato th {
+    background: #14213d;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+table.campeonato tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+table.campeonato tr:hover {
+    background: #e9ecef;
+    transition: 0.3s;
+}
+
+/* --- CATÁLOGO DIGITAL --- */
+table.catalogo {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table.catalogo th, 
+table.catalogo td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+table.catalogo th {
+    background: #ffb703;
+    color: #000;
+    font-size: 16px;
+}
+
+table.catalogo tr:nth-child(even) {
+    background: #fdf3e7;
+}
+
+table.catalogo tr:hover {
+    background: #ffe5b4;
+    transition: 0.3s;
+}
+
+table.catalogo img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
