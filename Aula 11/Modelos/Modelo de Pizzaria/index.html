@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Times New Roman', Times, serif;}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/Modelo de Pizzaria/Imagens/florença.jpg');
+  height: 100;
+  width: 100;
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTATO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abre as 10:00 e fecha as 00:00</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black w3-hide-small" style="font-size:100px">PIZZARIA<br>STARHOUSE</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Sabor das Estrelas ☆</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE STARS</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Estrelas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Massas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Saladas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Constelação</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Eclipses</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Doces');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Nebulosas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Porções');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Órbita de Sabores</div>
+
+      </a>
+
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margherita Estelar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 45,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate fresco, muçarela de búfala e folhas de manjericão</p>
+  <hr>
+
+  <h1><b>Galáxia Calabresa</b> <span class="w3-tag w3-grey w3-round">Popular</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 48,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela, rodelas de calabresa e cebola</p>
+  <hr>
+
+  <h1><b>Constelação 4 Queijos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 52,00</span></h1>
+  <p class="w3-text-grey">Molho branco, muçarela, provolone, parmesão e gorgonzola</p>
+  <hr>
+
+  <h1><b>Cometa Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 56,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela, frango desfiado e catupiry cremoso</p>
+  <hr>
+
+  <h1><b>Órbita Portuguesa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 58,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela, presunto, ovo, cebola, pimentão e azeitonas</p>
+  <hr>
+  
+  <h1><b>Supernova Pepperoni</b> <span class="w3-tag w3-red w3-round">Picante!</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 57,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela e pepperoni com um toque de pimenta</p>
+  <hr>
+
+  <h1><b>Planeta Vegetariano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 53,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela, brócolis, palmito, milho e azeitonas</p>
+  <hr>
+  
+  <h1><b>Buraco Negro</b> <span class="w3-tag w3-grey w3-round">Novo!</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 62,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela, cogumelos shiitake e azeitonas pretas</p>
+  <hr>
+  
+  <h1><b>Lombo Canadense Lunar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 59,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela, lombo canadense, cebola e catupiry</p>
+  <hr>
+
+  <h1><b>Big Bang da Casa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 72,00</span></h1>
+  <p class="w3-text-grey">Molho de tomate, muçarela, presunto, frango, calabresa, palmito e bacon</p>
+</div>
+
+
+      
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasanha Apollo 11</b> <span class="w3-tag w3-grey w3-round">Popular</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 48,50</span></h1>
+  <p class="w3-text-grey">Massa artesanal, molho à bolonhesa, presunto, muçarela e parmesão</p>
+  <hr>
+
+  <h1><b>Espaguete Big Bang</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 42,00</span></h1>
+  <p class="w3-text-grey">Espaguete clássico com nosso molho à bolonhesa tradicional</p>
+  <hr>
+
+  <h1><b>Fettuccine Via Láctea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 46,00</span></h1>
+  <p class="w3-text-grey">Massa fresca ao molho alfredo cremoso com pedaços de frango</p>
+  <hr>
+
+  <h1><b>Nhoque da Sorte Estelar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 49,00</span></h1>
+  <p class="w3-text-grey">Nhoque de batata ao molho sugo com manjericão fresco</p>
+  <hr>
+  
+  <h1><b>Ravioli do Sistema Solar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 55,00</span></h1>
+  <p class="w3-text-grey">Ravioli de queijo com molho branco e nozes</p>
+  <hr>
+  
+  <h1><b>Penne ao Pesto de Andrômeda</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 47,00</span></h1>
+  <p class="w3-text-grey">Penne com molho pesto de manjericão, castanhas e azeite</p>
+  <hr>
+  
+  <h1><b>Talharim ao Cometa Carbonara</b> <span class="w3-tag w3-grey w3-round">Novo!</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 54,00</span></h1>
+  <p class="w3-text-grey">Talharim com creme de ovos, parmesão, pimenta do reino e bacon crocante</p>
+  <hr>
+
+  <h1><b>Capeletti da Missão Espacial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 51,00</span></h1>
+  <p class="w3-text-grey">Capeletti de carne servido em um caldo de frango cremoso</p>
+  <hr>
+  
+  <h1><b>Canelone de Espinafre Nebuloso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 53,00</span></h1>
+  <p class="w3-text-grey">Canelone recheado com espinafre e ricota ao molho branco gratinado</p>
+  <hr>
+  
+  <h1><b>Órbita de Frutos do Mar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 75,00</span></h1>
+  <p class="w3-text-grey">Espaguete com camarão, lula e mariscos ao molho de tomate fresco</p>
+</div>
+      
+
+    <div id="Saladas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Salada Nebulosa Verde</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 28,00</span></h1>
+  <p class="w3-text-grey">Mix de folhas, abacate, frango grelhado e molho de iogurte com ervas</p>
+  <hr>
+
+  <h1><b>Salada Galáxia Tropical</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 26,00</span></h1>
+  <p class="w3-text-grey">Alface americana, manga, frango defumado e molho cítrico especial</p>
+  <hr>
+
+  <h1><b>Salada Estrela Solar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 25,00</span></h1>
+  <p class="w3-text-grey">Tomates-cereja, rúcula, queijo minas, azeite e sementes de girassol</p>
+  <hr>
+
+  <h1><b>Salada Via Láctea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 30,00</span></h1>
+  <p class="w3-text-grey">Mix de folhas nobres, frutas vermelhas, queijo brie e molho agridoce</p>
+  <hr>
+
+  <h1><b>Salada Meteorito Crocante</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 27,00</span></h1>
+  <p class="w3-text-grey">Alface, frango empanado, croutons e molho de mostarda e mel</p>
+  <hr>
+
+  <h1><b>Salada Eclipse de Quinoa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 29,00</span></h1>
+  <p class="w3-text-grey">Quinoa, legumes grelhados, queijo feta e azeite de ervas finas</p>
+  <hr>
+
+  <h1><b>Salada Órbita Vegana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 31,00</span></h1>
+  <p class="w3-text-grey">Grão-de-bico, abobrinha, pimentões e molho tahine</p>
+  <hr>
+
+  <h1><b>Salada Cometa Caesar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 24,00</span></h1>
+  <p class="w3-text-grey">Alface romana, frango, parmesão e o clássico molho caesar</p>
+  <hr>
+
+  <h1><b>Salada Aurora Cósmica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 32,00</span></h1>
+  <p class="w3-text-grey">Beterraba, cenoura ralada, laranja e castanhas caramelizadas</p>
+  <hr>
+
+  <h1><b>Salada Supernova Mediterrânea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 33,00</span></h1>
+  <p class="w3-text-grey">Tomate seco, azeitonas pretas, pepino e queijo grego com azeite extra virgem</p>
+</div><br>
+
+<div id="Doces" class="w3-container menu w3-padding-32 w3-white">
+  <h1><b>Meteorito de Chocolate</b> <span class="w3-tag w3-grey w3-round">Popular</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 28,00</span></h1>
+  <p class="w3-text-grey">Petit Gateau de chocolate com recheio cremoso e sorvete de creme</p>
+  <hr>
+
+  <h1><b>Eclipse de Brownie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 26,00</span></h1>
+  <p class="w3-text-grey">Brownie de chocolate com nozes, servido com calda quente e sorvete</p>
+  <hr>
+
+  <h1><b>Pudim da Estação Espacial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 18,00</span></h1>
+  <p class="w3-text-grey">Pudim de leite condensado cremoso com calda de caramelo</p>
+  <hr>
+
+  <h1><b>Mousse de Maracujá Galáctico</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 20,00</span></h1>
+  <p class="w3-text-grey">Mousse aerado de maracujá com calda da fruta</p>
+  <hr>
+  
+  <h1><b>Torta de Limão Lunar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 22,00</span></h1>
+  <p class="w3-text-grey">Fatia de torta de limão com massa crocante e cobertura de merengue</p>
+  <hr>
+  
+  <h1><b>Anéis de Saturno</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 25,00</span></h1>
+  <p class="w3-text-grey">Porção de mini churros com doce de leite para acompanhar</p>
+  <hr>
+  
+  <h1><b>Cratera de Sorvete</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 19,00</span></h1>
+  <p class="w3-text-grey">Duas bolas de sorvete (sabores a escolher) com calda e castanhas</p>
+  <hr>
+  
+  <h1><b>Tiramisù Supernova</b> <span class="w3-tag w3-grey w3-round">Novo!</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 30,00</span></h1>
+  <p class="w3-text-grey">Sobremesa italiana com queijo mascarpone, café e biscoitos</p>
+  <hr>
+  
+  <h1><b>Pizza Brotinho Astro Doce</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 35,00</span></h1>
+  <p class="w3-text-grey">Pizza pequena de chocolate com morangos ou M&Ms</p>
+  <hr>
+  
+  <h1><b>Salada de Frutas de Órion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 17,00</span></h1>
+  <p class="w3-text-grey">Mix de frutas da estação</p>
+</div>
+
+<div id="Porções" class="w3-container menu w3-padding-32 w3-white">
+  <h1><b>Batatas Fritas da Via Láctea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 30,00</span></h1>
+  <p class="w3-text-grey">Porção generosa de batatas fritas crocantes. Adicional de cheddar e bacon: R$10</p>
+  <hr>
+
+  <h1><b>Anéis de Cebola de Saturno</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 32,00</span></h1>
+  <p class="w3-text-grey">Anéis de cebola empanados e fritos, acompanha molho barbecue</p>
+  <hr>
+
+  <h1><b>Meteoritos de Queijo</b> <span class="w3-tag w3-grey w3-round">Popular</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 35,00</span></h1>
+  <p class="w3-text-grey">Bolinhas de queijo cremosas e crocantes por fora</p>
+  <hr>
+
+  <h1><b>Fragmentos de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 40,00</span></h1>
+  <p class="w3-text-grey">Tiras de frango empanado servidas com molho de mostarda e mel</p>
+  <hr>
+  
+  <h1><b>Asteroides de Calabresa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 38,00</span></h1>
+  <p class="w3-text-grey">Calabresa acebolada fatiada, servida com pão</p>
+  <hr>
+  
+  <h1><b>Polenta Frita Interestelar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 28,00</span></h1>
+  <p class="w3-text-grey">Palitos de polenta frita cobertos com queijo parmesão ralado</p>
+  <hr>
+  
+  <h1><b>Mandioca das Estrelas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 29,00</span></h1>
+  <p class="w3-text-grey">Porção de mandioca frita cremosa com manteiga de garrafa</p>
+  <hr>
+  
+  <h1><b>Tábua de Frios Sputnik</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 65,00</span></h1>
+  <p class="w3-text-grey">Seleção de queijos, salame, presunto de parma, azeitonas e pães</p>
+  <hr>
+  
+  <h1><b>Pão de Alho de Andrômeda</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 25,00</span></h1>
+  <p class="w3-text-grey">Pão baguete com pasta de alho especial da casa e queijo gratinado</p>
+  <hr>
+  
+  <h1><b>Iscas de Tilápia Cósmicas</b> <span class="w3-tag w3-grey w3-round">Novo!</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 45,00</span></h1>
+  <p class="w3-text-grey">Iscas de tilápia empanadas e fritas, acompanha molho tártaro</p>
+</div>
+
+<div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
+  <h2>Coquetéis Intergalácticos (Com Álcool)</h2>
+  <br>
+  <h1><b>Nebulosa de Gin Tônica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 32,00</span></h1>
+  <p class="w3-text-grey">Gin, água tônica, e um toque de xarope de frutas vermelhas</p>
+  <hr>
+
+  <h1><b>Caipirinha Lunar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 25,00</span></h1>
+  <p class="w3-text-grey">Cachaça artesanal, limão taiti, açúcar e gelo</p>
+  <hr>
+  
+  <h1><b>Cometa Moscow Mule</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 30,00</span></h1>
+  <p class="w3-text-grey">Vodka, suco de limão e espuma de gengibre especial da casa</p>
+  <hr>
+  
+  <h1><b>Buraco Negro</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 35,00</span></h1>
+  <p class="w3-text-grey">Licor de café, vodka e um toque de chocolate amargo</p>
+  <hr>
+  
+  <h1><b>Aurora Boreal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 34,00</span></h1>
+  <p class="w3-text-grey">Mix de licores coloridos com rum, suco de laranja e abacaxi</p>
+  <hr>
+  
+  <br>
+  <h2>Sucos de Outro Planeta (Sem Álcool)</h2>
+  <br>
+  
+  <h1><b>Suco de Marte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 15,00</span></h1>
+  <p class="w3-text-grey">Suco natural de morango com melancia e hortelã</p>
+  <hr>
+  
+  <h1><b>Limonada Galáctica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 14,00</span></h1>
+  <p class="w3-text-grey">Limonada suíça cremosa com um toque de gengibre</p>
+  <hr>
+  
+  <h1><b>Soda Italiana de Andrômeda</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 18,00</span></h1>
+  <p class="w3-text-grey">Água com gás, gelo e xarope de maçã verde</p>
+  <hr>
+
+  <h1><b>Chá Gelado de Órion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 12,00</span></h1>
+  <p class="w3-text-grey">Chá mate da casa com limão e fatias de laranja</p>
+  <hr>
+
+  <h1><b>Vitamina Via Láctea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 20,00</span></h1>
+  <p class="w3-text-grey">Leite batido com açaí, banana e mel</p>
+</div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-vivid-purplish-blue w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre</h1>
+    <p>Bem-vindo à StarHouse, onde cada fatia é feita para brilhar!
+Aqui, a paixão pela pizza se une a ingredientes frescos, massas artesanais e muito sabor. Nossa missão é transformar cada refeição em um momento especial — seja um jantar em família, um encontro com amigos ou aquele pedido de fim de semana.
+Com um toque moderno e um ambiente acolhedor, a StarHouse nasceu para iluminar suas noites com o sabor das melhores receitas italianas e o jeitinho brasileiro de fazer pizza. 🌟</p>
+    <p><strong>The Chef?</strong> Mr. Maria Góes<img src="/Modelo de Pizzaria/Imagens/chef2.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Temos orgulho dos nossos chefs/p>
+    <img src="/Modelo de Pizzaria/Imagens/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horário de Funcionamento</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Segunda e Domingo- Fechado</p>
+        <p>Terça- Aberto 10:00 ás 00:00</p>
+        <p>Quarta- Aberto 10:00 ás 00:00</p>
+      
+      </div>
+      <div class="w3-col s6">
+        <p>Quinta- Aberto 10:00 ás 00:00</p>
+        <p>Sexta- Aberto 10:00 ás 00:00</p>
+        <p>Sábado- Aberto 10:00 ás 00:00</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/Modelo de Pizzaria/Imagens/star.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Numero para contato (11) 98741-2842</p>
+    <p><span class="w3-tag">Sabia disso!</span> Oferecemos serviço completo de buffet para qualquer tipo de evento — grande ou pequeno. Entendemos as suas necessidades e garantimos o melhor em cada detalhe: sabor irresistível e apresentação impecável.</p>
+    <p class="w3-xxlarge"><strong>Reserva:</strong> Reserve sua mesa, descubra o especial do dia ou mande uma mensagem pra gente:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantas Pessoas" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Data" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem \ Requisitos especiais" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">ENVIAR RESERVA!</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-blue";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
