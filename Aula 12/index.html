@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios de HTML Semântico - Maria</title>
+  <style>
+    body { font-family: 'Times New Roman', Times, serif; margin: 0; background-color: #030360; line-height: 1.6; }
+    header, footer { background: #dbf6ff; color: rgb(0, 0, 0); text-align: center; padding: 15px; }
+    nav a { color: rgb(0, 0, 0); text-decoration: none; margin: 0 10px; }
+    nav a:hover { text-decoration: underline; }
+    section, article, aside, figure { margin: 20px; padding: 15px; background: rgb(255, 255, 255); border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    aside { background: #cde1ff; float: right; width: 30%; }
+ figure img {width: 30%;border-radius: 8px;display: block;margin: 0 auto;}
+    figcaption { text-align: center; font-style: italic; margin-top: 5px; }
+    details { background: #5bd0ee; margin: 10px 0; padding: 10px; border-radius: 8px; }
+    mark { background: #0881b4; }
+    time { color: #555; font-style: italic; }
+    h1, h2, h3 { color: #333; }
+    .clearfix::after { content: ""; display: block; clear: both; }
+  </style>
+</head>
+<body>
+
+ 
+  <header>
+    <h1>Site da Maria</h1>
+    <p>Explorando HTML Semântico!!</p>
+    <nav>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pais">Sobre o País</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#blog">Blog</a>
+      <a href="#faq">FAQ</a>
+      <a href="#portfolio">Portfólio</a>
+    </nav>
+  </header>
+
+  <main class="clearfix">
+
+ 
+    <section id="hobbies">
+      <h2>Meus Hobbies</h2>
+
+      <section>
+        <h3>Fotografia</h3>
+        <p>Adoro capturar momentos e registrar o pôr do sol.</p>
+      </section>
+
+      <section>
+        <h3>Colagem</h3>
+        <p>Gosto muito de fazer colagens sobre qualquer coisa</p>
+      </section>
+
+      <section>
+        <h3>Música</h3>
+        <p>Escuto Justin Bieber todos os dias!</p>
+      </section>
+    </section>
+
+    <section id="reviews">
+      <h2>Reviews de Filmes</h2>
+
+      <article>
+        <h3>A Barraca do Beijo</h3>
+        <p>Um romance adolescente leve e divertido, cheio de emoção.</p>
+        <p>Mostra a importância da amizade, do amor e da autodescoberta.</p>
+      </article>
+
+      <article>
+        <h3>A Culpa é das Estrelas</h3>
+        <p>Tocante e profundo, fala sobre amor e finitude com sensibilidade.</p>
+        <p>Deixa uma mensagem de coragem diante da dor e da perda.</p>
+      </article>
+
+      <article>
+        <h3>Premonição 3</h3>
+        <p>Cheio de tensão e surpresas assustadoras do início ao fim.</p>
+        <p>Explora o medo do destino e o instinto de sobrevivência.</p>
+      </article>
+    </section>
+
+   
+    <section id="pais" class="clearfix">
+      <h2>Sobre o Brasil</h2>
+      <p>O Brasil é o maior país da América do Sul e conhecido por sua diversidade cultural, musical e natural.</p>
+
+      <aside>
+        <h3>Curiosidades</h3>
+        <p>O Brasil abriga a maior floresta tropical do mundo — a Amazônia 🌳</p>
+      </aside>
+    </section>
+
+    
+    <section id="galeria">
+      <h2>Minha Galeria</h2>
+
+      <figure>
+        <img src="20250418_164547.jpg" alt="Pedreira">
+        <figcaption>Pedreira abandonada em MG</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG-20250328-WA0010.jpg" alt="Oração">
+        <figcaption>Circulo de oração no monte</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG-20250407-WA0017.jpg" alt="Museu">
+        <figcaption>Museu da Lingua Portuguesa</figcaption>
+      </figure>
+    </section>
+
+    <article id="tutorial">
+      <header>
+        <h2>Tutorial: Como Criar um Site</h2>
+        <time datetime="2025-10-16">16 de outubro de 2025</time>
+      </header>
+
+      <section>
+        <h3>1. Estrutura HTML</h3>
+        <p>Monte o esqueleto com cabeçalho, conteúdo e rodapé.</p>
+      </section>
+
+      <section>
+        <h3>2. Estilo com CSS</h3>
+        <p>Adicione cores, fontes e espaçamentos para deixar o site bonito.</p>
+      </section>
+    </article>
+
+    
+    <section id="blog">
+      <h2>Blog da Maria</h2>
+
+      <article>
+        <header>
+          <h3>Meu Primeiro Post</h3>
+          <time datetime="2025-10-15">15/10/2025</time>
+        </header>
+        <section><p>Hoje comecei a estudar HTML semântico e estou amando!</p></section>
+        <footer><p>Por Maria</p></footer>
+      </article>
+
+      <article>
+        <header>
+          <h3>Dicas de Estudo</h3>
+          <time datetime="2025-10-16">16/10/2025</time>
+        </header>
+        <section><p>Revisar o conteúdo diariamente ajuda a fixar melhor.</p></section>
+        <footer><p>Por Maria</p></footer>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Posts Populares</h3>
+      <ul>
+        <li>Como aprendi <mark>HTML</mark></li>
+        <li>Meus projetos favoritos</li>
+      </ul>
+    </aside>
+
+    <section id="faq">
+      <h2>Perguntas Frequentes</h2>
+
+      <details>
+        <summary>O que é HTML?</summary>
+        <p>É a linguagem usada para estruturar páginas web.</p>
+      </details>
+
+      <details>
+        <summary>O que é CSS?</summary>
+        <p>É a linguagem de estilo usada para deixar o site bonito.</p>
+      </details>
+
+      <details>
+        <summary>O que é JavaScript?</summary>
+        <p>É uma linguagem de programação que torna o site interativo.</p>
+      </details>
+
+      <details>
+        <summary>Qual editor usar?</summary>
+        <p>Visual Studio Code é uma ótima opção.</p>
+      </details>
+
+      <details>
+        <summary>Como publicar um site?</summary>
+        <p>Você pode usar plataformas como GitHub Pages.</p>
+      </details>
+    </section>
+
+
+    <section id="conceito">
+      <h2>Conceito Técnico</h2>
+      <p>O <mark>HTML</mark> é a base de toda a web moderna.</p>
+      <p>Com <mark>CSS</mark>, é possível dar estilo e personalidade às páginas.</p>
+      <p>Já o <mark>JavaScript</mark> traz vida e interatividade ao conteúdo.</p>
+    </section>
+
+    
+    <section id="linha-do-tempo">
+      <h2>Linha do Tempo de Eventos</h2>
+      <article>
+        <h3>Descobrimento do Brasil</h3>
+        <time datetime="1500-04-22">22 de abril de 1500</time>
+      </article>
+      <article>
+        <h3>Independência do Brasil</h3>
+        <time datetime="1822-09-07">7 de setembro de 1822</time>
+      </article>
+      <article>
+        <h3>Proclamação da República</h3>
+        <time datetime="1889-11-15">15 de novembro de 1889</time>
+      </article>
+      <article>
+        <h3>Criação da ONU</h3>
+        <time datetime="1945-10-24">24 de outubro de 1945</time>
+      </article>
+      <article>
+        <h3>Primeira Viagem à Lua</h3>
+        <time datetime="1969-07-20">20 de julho de 1969</time>
+      </article>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfólio Pessoal</h2>
+
+      <section id="sobre">
+        <h3>Sobre Mim</h3>
+        <p>Sou a Maria, estudante de design e programação web.</p>
+      </section>
+
+      <section id="projetos">
+        <h3>Projetos</h3>
+        <article>
+          <h4>Site da Pizzaria StarHouse</h4>
+          <p>Projeto em HTML e CSS com cardápio interativo.</p>
+        </article>
+        <article>
+          <h4>Blog pessoal</h4>
+          <p>Criação de um blog com estrutura semântica e design responsivo.</p>
+        </article>
+      </section>
+
+      <section id="habilidades">
+        <h3>Habilidades</h3>
+        <p>HTML, CSS, Design Gráfico, Criatividade e Comunicação.</p>
+      </section>
+
+      <aside>
+        <h3>Contato</h3>
+        <p>Email: maria@exemplo.com</p>
+        <p>Instagram: @mariacodes</p>
+      </aside>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Maria Goes — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
