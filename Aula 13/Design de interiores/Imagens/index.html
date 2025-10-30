@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de Interiores</title>
+
+    <!-- W3.CSS v5 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .w3-half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .w3-half img:hover {
+            opacity: 1;
+        }
+
+        /* Cores personalizadas */
+        .bg-verde-floresta { background-color: #014421 !important; color: white !important; }
+        .bg-verde-esmeralda { background-color: #046307 !important; color: white !important; }
+        .bg-verde-musgo { background-color: #4C9A66 !important; color: white !important; }
+        .bg-verde-medio { background-color: #2E8B57 !important; color: white !important; }
+        .bg-verde-folha { background-color: #6DBF82 !important; color: #014421 !important; }
+        .bg-verde-claro { background-color: #9EDBB2 !important; color: #014421 !important; }
+        .bg-verde-pastel { background-color: #C8E6C9 !important; color: #014421 !important; }
+
+        .border-verde-floresta { border-color: #014421 !important; }
+        .border-verde-esmeralda { border-color: #046307 !important; }
+        .border-verde-musgo { border-color: #4C9A66 !important; }
+        .border-verde-medio { border-color: #2E8B57 !important; }
+        .border-verde-folha { border-color: #6DBF82 !important; }
+        .border-verde-claro { border-color: #9EDBB2 !important; }
+        .border-verde-pastel { border-color: #C8E6C9 !important; }
+
+        /* Botões personalizados */
+        .btn-verde-floresta { background-color: #014421 !important; color: white !important; }
+        .btn-verde-esmeralda { background-color: #046307 !important; color: white !important; }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <nav class="w3-sidebar bg-verde-floresta w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px">Fechar Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>Design de<br>Interiores</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#Vitrine" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Vitrine</a>
+            <a href="#Servicos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Serviços</a>
+            <a href="#Designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+            <a href="#Pacotes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pacotes</a>
+            <a href="#Contato" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+        </div>
+    </nav>
+
+    <!-- MENU SUPERIOR (Telas pequenas) -->
+    <header class="w3-container w3-top w3-hide-large bg-verde-esmeralda w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-white w3-margin-right" onclick="w3_open()">☰</a>
+        <span>Design de Interiores</span>
+    </header>
+
+    <!-- SOBREPOSIÇÃO PARA TELAS PEQUENAS -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Cabeçalho -->
+        <div class="w3-container" style="margin-top:80px" id="Vitrine">
+            <h1 class="w3-jumbo"><b>Esmeralda Interiors</b></h1>
+            <h1 class="w3-xxxlarge" style="color: #9EDBB2;"><b>Vitrine</b></h1>
+            <hr style="width:50px;border:5px solid #6E6E6E" class="w3-round">
+        </div>
+
+        <!-- Grade de fotos -->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="tijolo.jpg" style="width:100%" onclick="onClick(this)" alt="O concreto encontra os tijolos">
+                <img src="ffff.jpg" style="width:100%" onclick="onClick(this)" alt="Design escandinavo leve, branco e compacto.">
+                <img src="sala2.jpg" style="width:100%" onclick="onClick(this)" alt="Paredes brancas com cadeiras de design">
+            </div>
+
+            <div class="w3-half">
+                <img src="31211b2395ae6231fef7dd62545e279d.jpg" style="width:100%" onclick="onClick(this)" alt="Janelas para o átrio">
+                <img src="quarto.jpg" style="width:100%" onclick="onClick(this)" alt="Quarto e escritório em um único espaço.">
+                <img src="banheiro.jpg" style="width:100%" onclick="onClick(this)" alt="Design escandinavo">
+            </div>
+        </div>
+
+        <!-- Modal (imagem ampliada) -->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- Serviços -->
+        <div class="w3-container" id="Servicos" style="margin-top:75px">
+            <h1 class="w3-xxxlarge"><b>Serviços</b></h1>
+            <hr class="w3-round" style="width:50px;border:5px solid #2E8B57">
+            <p>Somos um serviço de design de interiores que foca no que é melhor para a sua casa e no que é melhor para você!</p>
+            <p>Oferecemos design e soluções personalizadas, com qualidade, conforto e satisfação garantida.</p>
+        </div>
+
+        <!-- Designers -->
+        <div class="w3-container" id="Designers" style="margin-top:75px">
+            <h1 class="w3-xxxlarge" style="color: white;"><b>Designers</b></h1>
+            <hr class="w3-round" style="width:50px;border:5px solid #6DBF82">
+            <p>A melhor equipe do mundo.</p>
+            <p>Nossos profissionais trabalham com atenção aos detalhes e paixão pelo que fazem.</p>
+        </div>
+
+        <!-- A equipe -->
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="pere2.PNG" alt="Maria Eduarda" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Maria Góes</h3>
+                        <p class="w3-opacity">CEO & Fundadora</p>
+                        <p>Cria ambientes harmoniosos e funcionais com cada detalhe cuidadosamente planejado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="ge4.PNG" alt="Geovanna Borges" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Geovanna Borges</h3>
+                        <p class="w3-opacity">Designer</p>
+                        <p>Transforma espaços em ambientes elegantes e acolhedores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="Capturar.PNG" alt="Gabrielly Silva" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Gabrielly Silva</h3>
+                        <p class="w3-opacity">Arquiteta</p>
+                        <p>Cria projetos que unem harmonia, funcionalidade e beleza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pacotes -->
+        <div class="w3-container" id="Pacotes" style="margin-top:75px">
+            <h1 class="w3-xxxlarge" style="color: white;"><b>Pacotes</b></h1>
+            <hr class="w3-round" style="width:50px;border:5px solid #046307">
+            <p>Valores justos, qualidade e cuidado em cada detalhe do nosso trabalho.</p>
+        </div>
+
+        <!-- Tabelas de Preços -->
+        <div class="w3-row-padding">
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul bg-verde-pastel w3-center">
+                    <li class="bg-verde-musgo w3-xlarge w3-padding-32">Básico</li>
+                    <li class="w3-padding-16">Planta Baixa</li>
+                    <li class="w3-padding-16">10 horas de Suporte</li>
+                    <li class="w3-padding-16">Fotografia Profissional</li>
+                    <li class="w3-padding-16">20% de desconto em móveis</li>
+                    <li class="w3-padding-16">
+                        <h2>R$ 199</h2>
+                        <span class="w3-opacity">por projeto</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button btn-verde-floresta w3-padding-large w3-hover-opacity">Inscrever-se</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-half">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="bg-verde-esmeralda w3-xlarge w3-padding-32">Profissional</li>
+                    <li class="w3-padding-16">Planta Baixa</li>
+                    <li class="w3-padding-16">50 horas de Suporte</li>
+                    <li class="w3-padding-16">Fotografia Profissional</li>
+                    <li class="w3-padding-16">50% de desconto em móveis</li>
+                    <li class="w3-padding-16">
+                        <h2>R$ 249</h2>
+                        <span class="w3-opacity">por projeto</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button btn-verde-esmeralda w3-padding-large w3-hover-opacity">Inscrever-se</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contato -->
+        <div class="w3-container" id="Contato" style="margin-top:75px">
+            <h1 class="w3-xxxlarge" style="color: #014421;"><b>Contato</b></h1>
+            <hr class="w3-round" style="width:50px;border:5px solid #4C9A66">
+            <p>Quer que a gente decore sua casa? Preencha o formulário e nos conte os detalhes 😉</p>
+            <form action="/action_page.php" target="_blank">
+                <div class="w3-section">
+                    <label>Nome</label>
+                    <input class="w3-input w3-border" type="text" name="Nome" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input w3-border" type="email" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Mensagem</label>
+                    <textarea class="w3-input w3-border" name="Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="w3-button w3-block w3-padding-large bg-verde-esmeralda w3-hover-opacity">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            document.getElementById("caption").innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+</html>
